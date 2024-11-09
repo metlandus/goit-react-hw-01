@@ -1,9 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-export const DataTable = () => {
+function DataTable({ transactions }) {
     return (
-        <div>DataTable</div>
-    )
+        <table>
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Currency</th>
+                </tr>
+            </thead>
+            <tbody>
+                {transactions.map((transaction, id) => (
+                    <tr key={id}>
+                        <td>{transaction.type}</td>
+                        <td>{transaction.amount}</td>
+                        <td>{transaction.currency}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    );
 }
 
 export default DataTable;

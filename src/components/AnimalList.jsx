@@ -1,12 +1,16 @@
 import React from 'react'
 
-function AnimalList({ name, isOnline, avatar }) {
+function AnimalList({ friends }) {
     return (
-                <li>
-                    <img src={avatar} alt="avatar" />
-                    <p>{name}</p>
-                    <p>{isOnline ? 'online' : 'offline'}</p>
+        <ul>
+            {friends.map((friend, id) => (
+                <li key={id}>
+                    <img src={friend.avatar} alt="avatar" />
+                    <p>{friend.name}</p>
+                    <p>{friend.isOnline ? 'online' : 'offline'}</p>
                 </li>
+            ))}
+        </ul>
     )
 }
 
