@@ -1,14 +1,12 @@
 import React from 'react'
 
-export const AnimalList = () => {
+function AnimalList({ name, isOnline, avatar }) {
     return (
-        <div className='friends-list'><ul>
-            <li>Mango</li>
-            <li>Kiwi</li>
-            <li>Ajax</li>
-            <li>Jay</li>
-            <li>Poly</li>
-        </ul></div>
+                <li>
+                    <img src={avatar} alt="avatar" />
+                    <p>{name}</p>
+                    <p>{isOnline ? 'online' : 'offline'}</p>
+                </li>
     )
 }
 
