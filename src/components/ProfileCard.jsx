@@ -2,7 +2,7 @@ import React from 'react'
 
 function ProfileCard({ name, tag, location, stats, image }) {
     return (
-        <div className='profile-card'>
+        <div className='profile-card flex flex-col items-center'>
             <div>
                 <img src={image} alt={`${name}'s avatar`} />
                 <p>{name}</p>
