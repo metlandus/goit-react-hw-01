@@ -14,15 +14,15 @@ function ProfileCard({ name, tag, location, stats, image }) {
                     <ul className='flex flex-row bg-black/20 border-t-2 border-black/40 justify-between'>
                         <li className='p-4 flex flex-col items-center border-r-2 border-black/40 w-1/3'>
                             <span className='text-lg font-medium'>Followers </span>
-                            <span className='text-lg font-extrabold'>{stats.followers}</span>
+                            <span className='text-lg font-bold'>{stats.followers}</span>
                         </li>
                         <li className='p-4 flex flex-col items-center border-r-2 border-black/40 w-1/3'>
                             <span className='text-lg font-medium'>Views </span>
-                            <span className='text-lg font-extrabold'>{stats.views}</span>
+                            <span className='text-lg font-bold'>{stats.views}</span>
                         </li>
                         <li className='p-4 flex flex-col items-center w-1/3'>
                             <span className='text-lg font-medium'>Likes </span>
-                            <span className='text-lg font-extrabold'>{stats.likes}</span>
+                            <span className='text-lg font-bold'>{stats.likes}</span>
                         </li>
                     </ul>
                 </div>
